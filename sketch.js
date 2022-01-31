@@ -6,7 +6,6 @@ var level1Sprite, level1Image;
 var level2Sprite, level2Image;
 var level3Sprite, level3Image;
 var onlineSprite, onlineImage;
-var copyrightSprite, copyrightImage;
 
 //Chat
 var chat1Sprite, chat1Image;
@@ -43,7 +42,6 @@ function preload(){
   level2Image = loadImage('assets/images/menu/two.png');
   level3Image = loadImage('assets/images/menu/three.png');
   onlineImage = loadImage('assets/images/menu/online.png');
-  copyrightImage = loadImage('assets/images/menu/copyright.png');
 
   //Chat
   chat1Image = loadImage('assets/images/chat/messageOne.png');
@@ -96,13 +94,7 @@ function setup(){
   onlineSprite = createSprite(windowWidth/2, windowHeight - windowHeight + 300, 0, 0);
   onlineSprite.addImage(onlineImage);
   onlineSprite.visible = false;
-
-  copyrightSprite = createSprite(windowWidth/2, windowHeight - 50, 0, 0);
-  copyrightSprite.addImage(copyrightImage);
-  copyrightSprite.scale = 0.5;
-  copyrightSprite.visible = false;
-
-
+  
   //Chat
   chat1Sprite = createSprite(windowWidth - windowWidth + 150, windowHeight - 100, 0, 0);
   chat1Sprite.addImage(chat1Image);
